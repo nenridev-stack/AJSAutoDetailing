@@ -14,22 +14,25 @@ interface MobileMenuProps {
 
 const panelVariants = {
   hidden: {
-    x: '100%',
+    opacity: 0,
+    y: '-100%',
   },
   visible: {
-    x: 0,
+    opacity: 1,
+    y: 0,
     transition: {
       type: 'spring',
       stiffness: 300,
-      damping: 25,
+      damping: 30,
     },
   },
   exit: {
-    x: '100%',
+    opacity: 0,
+    y: '-100%',
     transition: {
       type: 'spring',
       stiffness: 300,
-      damping: 25,
+      damping: 30,
     },
   },
 };
@@ -97,10 +100,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             aria-hidden="true"
           />
 
-          {/* Slide-out panel — dark glass */}
+          {/* Slide-out panel — full-width solid background */}
           <motion.div
             key="mobile-menu-panel"
-            className="fixed inset-y-0 right-0 z-50 w-[280px] max-w-[80vw] bg-[#0a0a0a] border-l border-white/10 shadow-2xl md:hidden"
+            className="fixed inset-0 z-50 bg-black md:hidden overflow-y-auto"
             variants={panelVariants}
             initial="hidden"
             animate="visible"
@@ -110,10 +113,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             aria-label="Mobile navigation menu"
           >
             {/* Close button */}
-            <div className="flex items-center justify-end p-4">
+            <div className="flex items-center justify-end p-4 pt-5">
               <button
                 onClick={onClose}
-                className="flex items-center justify-center w-11 h-11 min-w-[44px] min-h-[44px] rounded-md text-white/70 hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
+                className="flex items-center justify-center w-11 h-11 min-w-[44px] min-h-[44px] rounded-md text-white/70 hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 aria-label="Close menu"
               >
                 <X className="h-6 w-6" />
@@ -121,8 +124,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </div>
 
             {/* Navigation links */}
-            <nav className="px-4 py-2" aria-label="Mobile navigation">
-              <ul className="flex flex-col gap-1">
+            <nav className="px-6 py-8 flex flex-col items-center justify-center min-h-[60vh]" aria-label="Mobile navigation">
+              <ul className="flex flex-col gap-2 w-full max-w-xs">
                 {NAV_LINKS.map((link) => {
                   const isActive = pathname === link.href;
                   const isCTA = 'isCTA' in link && link.isCTA;
@@ -133,7 +136,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                         <Link
                           href={link.href}
                           onClick={onClose}
-                          className="flex items-center justify-center w-full min-h-[44px] mt-4 bg-accent-500 text-white rounded-md px-4 py-3 text-base font-semibold transition-colors hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
+                          className="flex items-center justify-center w-full min-h-[48px] mt-4 bg-accent-500 text-white rounded-lg px-4 py-3 text-lg font-semibold transition-colors hover:bg-accent-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                         >
                           {link.label}
                         </Link>
@@ -146,7 +149,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                       <Link
                         href={link.href}
                         onClick={onClose}
-                        className={`flex items-center w-full min-h-[44px] px-3 py-3 text-base font-medium rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] ${
+                        className={`flex items-center justify-center w-full min-h-[48px] px-3 py-3 text-lg font-medium rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
                           isActive
                             ? 'text-accent-400 bg-white/5'
                             : 'text-gray-300 hover:bg-white/5 hover:text-white'
