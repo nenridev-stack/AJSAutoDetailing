@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { CarSilhouette } from './CarSilhouette';
 
 /**
  * Dramatic hero section with pure black background,
@@ -82,12 +83,17 @@ export function HeroSection() {
           </Link>
         </motion.div>
 
+        {/* Hero Image */}
+        <div className="mt-16 w-full">
+          <CarSilhouette />
+        </div>
+
         {/* Trust line */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.5 }}
-          className="mt-12 text-sm text-gray-500 flex items-center gap-4"
+          className="mt-8 text-sm text-gray-500 flex items-center gap-4"
         >
           <span className="flex items-center gap-1 text-amber-400">
             {'★★★★★'}

@@ -18,7 +18,7 @@ export function CarSilhouette() {
       {/* Main car image */}
       <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
         <Image
-          src="/brand/MainHeroImage.jpeg"
+          src="/brand/MainHeroImage.jpg"
           alt="Professional auto detailing by Brisbane Blackline Detailing"
           fill
           className="object-cover"
