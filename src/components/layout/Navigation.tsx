@@ -42,7 +42,7 @@ export default function Navigation() {
           <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
             <Image
               src="/brand/logo.jpeg"
-              alt="AJ'S Auto Detailing logo"
+              alt="Brisbane Blackline Detailing logo"
               width={40}
               height={40}
               className="object-cover w-full h-full"

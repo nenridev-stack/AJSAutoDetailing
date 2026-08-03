@@ -200,25 +200,25 @@ export const NAV_LINKS = [
 // ============================================================
 
 export const BUSINESS_INFO = {
-  name: "AJ'S Auto Detailing",
-  phone: '(555) 123-4567',
-  email: 'info@ajsautodetailing.com',
-  whatsapp: '+15551234567',
-  address: '123 Main Street, Anytown, TX 12345',
+  name: 'Brisbane Blackline Detailing',
+  phone: '(07) 1234 5678',
+  email: 'info@brisbaneblacklinedetailing.com.au',
+  whatsapp: '+61412345678',
+  address: 'Brisbane, QLD, Australia',
   hours: [
-    { day: 'Monday', hours: '8:00 AM – 6:00 PM' },
-    { day: 'Tuesday', hours: '8:00 AM – 6:00 PM' },
-    { day: 'Wednesday', hours: '8:00 AM – 6:00 PM' },
-    { day: 'Thursday', hours: '8:00 AM – 6:00 PM' },
-    { day: 'Friday', hours: '8:00 AM – 6:00 PM' },
-    { day: 'Saturday', hours: '9:00 AM – 5:00 PM' },
+    { day: 'Monday', hours: '7:00 AM – 5:00 PM' },
+    { day: 'Tuesday', hours: '7:00 AM – 5:00 PM' },
+    { day: 'Wednesday', hours: '7:00 AM – 5:00 PM' },
+    { day: 'Thursday', hours: '7:00 AM – 5:00 PM' },
+    { day: 'Friday', hours: '7:00 AM – 5:00 PM' },
+    { day: 'Saturday', hours: '8:00 AM – 3:00 PM' },
     { day: 'Sunday', hours: 'Closed' },
   ],
   social: {
-    facebook: 'https://facebook.com/ajsautodetailing',
-    instagram: 'https://instagram.com/ajsautodetailing',
-    youtube: 'https://youtube.com/@ajsautodetailing',
-    tiktok: 'https://tiktok.com/@ajsautodetailing',
+    facebook: 'https://facebook.com/brisbaneblacklinedetailing',
+    instagram: 'https://instagram.com/brisbaneblacklinedetailing',
+    youtube: 'https://youtube.com/@brisbaneblacklinedetailing',
+    tiktok: 'https://tiktok.com/@brisbaneblacklinedetailing',
   },
 } as const;
 

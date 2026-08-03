@@ -49,10 +49,10 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-medium text-white text-sm">Phone</h3>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+61712345678"
                   className="text-gray-400 text-sm hover:text-accent-400 transition-colors"
                 >
-                  (555) 123-4567
+                  (07) 1234 5678
                 </a>
               </div>
             </div>
@@ -73,10 +73,10 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-medium text-white text-sm">Email</h3>
                 <a
-                  href="mailto:info@ajsautodetailing.com"
+                  href="mailto:info@brisbaneblacklinedetailing.com.au"
                   className="text-gray-400 text-sm hover:text-accent-400 transition-colors"
                 >
-                  info@ajsautodetailing.com
+                  info@brisbaneblacklinedetailing.com.au
                 </a>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-medium text-white text-sm">WhatsApp</h3>
                 <a
-                  href="https://wa.me/15551234567"
+                  href="https://wa.me/61412345678"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 text-sm hover:text-green-400 transition-colors"
@@ -114,11 +114,11 @@ export default function ContactPage() {
                 <tbody className="divide-y divide-white/10">
                   <tr>
                     <td className="py-2 text-gray-400">Monday - Friday</td>
-                    <td className="py-2 text-right text-white font-medium">8:00 AM - 6:00 PM</td>
+                    <td className="py-2 text-right text-white font-medium">7:00 AM - 5:00 PM</td>
                   </tr>
                   <tr>
                     <td className="py-2 text-gray-400">Saturday</td>
-                    <td className="py-2 text-right text-white font-medium">9:00 AM - 5:00 PM</td>
+                    <td className="py-2 text-right text-white font-medium">8:00 AM - 3:00 PM</td>
                   </tr>
                   <tr>
                     <td className="py-2 text-gray-400">Sunday</td>

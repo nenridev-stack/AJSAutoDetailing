@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | AJ'S Auto Detailing",
+  title: "Privacy Policy | Brisbane Blackline Detailing",
   description:
     'Our privacy policy explains how we collect, use, and protect your personal information when you use our auto detailing services.',
   openGraph: {
-    title: "Privacy Policy | AJ'S Auto Detailing",
+    title: "Privacy Policy | Brisbane Blackline Detailing",
     description:
       'Our privacy policy explains how we collect, use, and protect your personal information.',
   },
   twitter: {
     card: 'summary',
-    title: "Privacy Policy | AJ'S Auto Detailing",
+    title: "Privacy Policy | Brisbane Blackline Detailing",
     description:
       'Our privacy policy explains how we collect, use, and protect your personal information.',
   },

@@ -16,10 +16,10 @@ function getResendClient(): Resend {
   return resendClient;
 }
 
-const BUSINESS_NAME = "AJ'S Auto Detailing";
+const BUSINESS_NAME = 'Brisbane Blackline Detailing';
 const BUSINESS_EMAIL = 'nenridev@gmail.com'; // Hardcoded until domain is verified on Resend
 // Resend requires sending from a verified domain or onboarding@resend.dev for testing
-const FROM_EMAIL = "AJ'S Auto Detailing <onboarding@resend.dev>";
+const FROM_EMAIL = 'Brisbane Blackline Detailing <onboarding@resend.dev>';
 
 export interface BookingEmailData {
   vehicleSize: string;

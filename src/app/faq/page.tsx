@@ -4,18 +4,18 @@ import { faqCategories } from '@/data/faq';
 import Accordion from '@/components/faq/Accordion';
 
 export const metadata: Metadata = {
-  title: "FAQ — AJ'S Auto Detailing",
+  title: 'FAQ — Brisbane Blackline Detailing',
   description:
     'Find answers to common questions about our auto detailing services, pricing, service area, vehicle preparation, and cancellation policy.',
   openGraph: {
-    title: "FAQ — AJ'S Auto Detailing",
+    title: 'FAQ — Brisbane Blackline Detailing',
     description:
       'Find answers to common questions about our auto detailing services, pricing, service area, vehicle preparation, and cancellation policy.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: "FAQ — AJ'S Auto Detailing",
+    title: 'FAQ — Brisbane Blackline Detailing',
     description:
       'Find answers to common questions about our auto detailing services.',
   },

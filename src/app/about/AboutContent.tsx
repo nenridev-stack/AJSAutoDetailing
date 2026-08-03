@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { ScrollReveal } from '@/components/motion/ScrollReveal';
 
 /**
@@ -27,22 +26,22 @@ export function AboutContent() {
             <div className="grid items-center gap-12 md:grid-cols-2">
               {/* Owner Photo */}
               <div className="flex justify-center">
-                <div className="relative h-80 w-80 overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl md:h-96 md:w-96">
-                  <Image
-                    src="/brand/MainHeroImage.jpeg"
-                    alt="AJ'S Auto Detailing — brand image"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 320px, 384px"
-                    priority
-                  />
+                <div className="relative h-80 w-80 overflow-hidden rounded-2xl bg-white/5 border border-white/10 shadow-xl md:h-96 md:w-96 flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <div className="w-20 h-20 rounded-full bg-accent-500/10 border border-accent-500/30 flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-10 h-10 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z" />
+                      </svg>
+                    </div>
+                    <p className="text-sm text-gray-500">Add your team or brand photo here</p>
+                  </div>
                 </div>
               </div>
 
               {/* Owner Narrative */}
               <div>
                 <h2 className="text-3xl font-bold text-white">
-                  AJ&apos;S Auto Detailing
+                  Brisbane Blackline Detailing
                 </h2>
                 <p className="mt-2 text-lg font-medium text-accent-400">
                   Founder &amp; Lead Detailer

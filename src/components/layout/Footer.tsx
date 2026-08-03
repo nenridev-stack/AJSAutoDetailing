@@ -23,7 +23,7 @@ export default function Footer() {
               <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
                 <Image
                   src="/brand/logo.jpeg"
-                  alt="AJ'S Auto Detailing logo"
+                  alt="Brisbane Blackline Detailing logo"
                   width={48}
                   height={48}
                   className="object-cover w-full h-full"

@@ -19,11 +19,11 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "AJ'S Auto Detailing | Professional Car Detailing",
-    template: "%s | AJ'S Auto Detailing",
+    default: 'Brisbane Blackline Detailing | Professional Car Detailing',
+    template: '%s | Brisbane Blackline Detailing',
   },
   description:
-    'Professional auto detailing services including full interior/exterior, ceramic coating, and basic wash packages for sedans, SUVs, and trucks.',
+    'Professional auto detailing services in Brisbane, Australia. Full interior/exterior, ceramic coating, and basic wash packages for sedans, SUVs, and trucks.',
 };
 
 export default function RootLayout({

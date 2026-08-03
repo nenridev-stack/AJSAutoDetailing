@@ -336,12 +336,12 @@ export default function ContactForm() {
           </p>
           <p className="text-xs text-red-400/80">
             Please try again, or contact us directly at{' '}
-            <a href="tel:+15551234567" className="underline font-medium">
-              (555) 123-4567
+            <a href="tel:+61712345678" className="underline font-medium">
+              (07) 1234 5678
             </a>{' '}
             or{' '}
-            <a href="mailto:info@ajsautodetailing.com" className="underline font-medium">
-              info@ajsautodetailing.com
+            <a href="mailto:info@brisbaneblacklinedetailing.com.au" className="underline font-medium">
+              info@brisbaneblacklinedetailing.com.au
             </a>
           </p>
         </motion.div>

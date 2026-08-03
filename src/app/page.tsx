@@ -10,20 +10,20 @@ import {
 } from '@/components/home';
 
 export const metadata: Metadata = {
-  title: "AJ'S Auto Detailing | Premium Car Detailing",
+  title: 'Brisbane Blackline Detailing | Premium Car Detailing',
   description:
-    'Professional auto detailing services in your area. Full interior/exterior, ceramic coating, and wash packages for sedans, SUVs, and trucks.',
+    'Professional auto detailing services in Brisbane, Australia. Full interior/exterior, ceramic coating, and wash packages for sedans, SUVs, and trucks.',
   openGraph: {
-    title: "AJ'S Auto Detailing | Premium Car Detailing",
+    title: 'Brisbane Blackline Detailing | Premium Car Detailing',
     description:
-      'Professional auto detailing services. Full detail, ceramic coating, and wash packages with transparent pricing.',
+      'Professional auto detailing services in Brisbane. Full detail, ceramic coating, and wash packages with transparent pricing.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "AJ'S Auto Detailing | Premium Car Detailing",
+    title: 'Brisbane Blackline Detailing | Premium Car Detailing',
     description:
-      'Professional auto detailing services. Full detail, ceramic coating, and wash packages with transparent pricing.',
+      'Professional auto detailing services in Brisbane. Full detail, ceramic coating, and wash packages with transparent pricing.',
   },
 };
 
